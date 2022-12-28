@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Nerko+One&family=Roboto+Condensed:ital@1&family=Roboto:ital@1&family=Signika+Negative&family=Uchen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  margin-block-end: 2px;
+  margin-block-start: 2px;
+}
+
+.foto {
+  max-width: 200px;
+  max-height: 160px;
+  width: auto;
+  height: auto;
+  min-height: 150px;
+}
+
+body {
+  font: 400 14px Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+input,
+button {
+  font: 400 18px Verdana, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+form input {
+  width: 100%;
+  height: 60px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+form button {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 41, 69);
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  font-weight: bolder;
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  transition: filter 0.2s;
+}
+
+form button:hover {
+  filter: brightness(90%);
+}
+
+.menu {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(34, 34, 34);
+}
+
+.menu > ul {
+  list-style: none;
+}
+.menu ul li {
+  width: 33%;
+  float: left;
+}
+
+.menu a {
+  color: #aaa;
+  font-family: Verdana;
+  padding: 15px;
+  display: block;
+  text-decoration: none;
+  background-color: #222;
+  text-align: center;
+}
+
+.menu a:hover {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.navbar-brand {
+  font-family: "Nerko One", cursive;
+  font-size: 25px;
+}
+
+.navbar.navbar-inverse {
+  background-color: rgb(255, 41, 69);
+  border: 10px solid white;
+  font-family: "Nerko One", cursive;
+  font-size: 25px;
+}
+
+#corpo {
+  margin-left: 10%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images5.alphacoders.com/822/822471.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+#corpo form {
+  width: 80%;
+}
+#corpo #inputs_form {
+  margin-left: 20%;
+  margin-block-end: 4%;
+}
+
+#cabecalho {
+  display: flex;
+  margin: -50px 0;
+  margin-left: -80px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 41, 69);
+  background-color: rgb(13, 37, 82);
+  font-size: 110%;
+}
+
+#cabecalho h1 {
+  text-align: center;
+  font-family: "Nerko One", cursive;
+  font-size: 60px;
+}
+
+#cabecalho h4 {
+  text-align: center;
+  font-family: "Nerko One", cursive;
+  font-size: 30px;
+}
+
+#icones_cabecalho {
+  transform: translate(-50%, -50%);
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#icones_cabecalho a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255, 41, 69);
+  color: whitesmoke;
+  margin: 0 3%;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+#icones_cabecalho a:hover {
+  background-color: black;
+}
+
+#icones_cabecalho i {
+  transition: 0.5s all;
+}
+
+#icones_cabecalho a:hover > i {
+  transform: scale(1.4) rotate(23deg);
+}
+
+.thumbnail {
+  background-color: rgb(13, 37, 82);
+  border: 8px solid rgb(255, 41, 69);
+}
+
+footer {
+  background-color: rgba(32, 74, 114, 0);
+  color: rgb(44, 44, 73);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.row.text-center {
+  color: rgb(170, 12, 12);
+}
+
+footer h4 {
+  font-size: 90%;
+}
+
+.caption.text-center a:hover {
+  color: red;
+}
+#icones {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 30px;
+  margin-left: 50%;
+}
+
+#icones a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255, 41, 69);
+  color: whitesmoke;
+  margin: 0 3px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+#icones a:hover {
+  background-color: rgb(13, 37, 82);
+}
+
+#icones i {
+  transition: 0.5s all;
+}
+
+#icones a:hover > i {
+  transform: scale(1.4) rotate(26deg);
+}
+
+.teste {
+  display: flex;
+  flex-direction: column;
+  margin-top: -100px;
+}
+
+#slogan {
+  color: white;
+  font-weight: bolder;
+}
