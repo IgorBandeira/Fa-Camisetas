@@ -11,4 +11,7 @@ Fã Camisetas é uma loja fictícia criada com foco no desenvolvimento em PHP, c
 <br/>
 <br/>
 Fã Camisetas se trata de uma loja online que vende camisetas de personagens para homens e mulheres. Possui login, cadastro, detalhes dos produtos e carrinho de compras.
+<hr/>
+
+https://user-images.githubusercontent.com/106918230/209845608-cf8f7cc8-3413-40ce-b4c1-d5d98524a86f.mp4
 
