@@ -128,15 +128,15 @@ form button:hover {
   margin-block-end: 4%;
 }
 
+/* Cabeçalho */
 #cabecalho {
+  margin-top: -5px;
+  margin-left: -30px;
   display: flex;
-  margin: -50px 0;
-  margin-left: -80px;
   align-items: center;
   justify-content: center;
-  color: rgb(255, 41, 69);
   background-color: rgb(13, 37, 82);
-  font-size: 110%;
+  color: rgb(255, 41, 69);
 }
 
 #cabecalho h1 {
@@ -153,7 +153,7 @@ form button:hover {
 
 #icones_cabecalho {
   transform: translate(-50%, -50%);
-  margin-left: 10%;
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,6 +186,12 @@ form button:hover {
   transform: scale(1.4) rotate(23deg);
 }
 
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .thumbnail {
   background-color: rgb(13, 37, 82);
   border: 8px solid rgb(255, 41, 69);
@@ -206,6 +212,10 @@ footer {
 
 .row.text-center {
   color: rgb(170, 12, 12);
+}
+
+.row.text-center h1 {
+  margin-bottom: 50px;
 }
 
 footer h4 {
@@ -259,4 +269,95 @@ footer h4 {
 #slogan {
   color: white;
   font-weight: bolder;
+}
+
+@media (max-width: 900px) {
+  body {
+    margin: 0;
+  }
+
+  img {
+    margin-left: -20px;
+  }
+
+  #cabecalho h1 {
+    font-size: 45px;
+    margin-right: 50px;
+  }
+
+  .thumbnail {
+    background-color: rgb(13, 37, 82);
+    border: 8px solid rgb(255, 41, 69);
+  }
+
+  #cabecalho h4 {
+    font-size: 33px;
+    margin-right: 50px;
+  }
+
+  .container {
+    margin: 2% auto;
+    font-size: 14px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .container form button {
+    padding: 8px 16px;
+  }
+
+  #icones_cabecalho {
+    margin-right: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  body,
+  header {
+    margin: 0;
+  }
+
+  img {
+    margin-left: 0px;
+  }
+
+  #cabecalho h1 {
+    font-size: 30px;
+    margin-right: 50px;
+  }
+
+  .thumbnail {
+    background-color: rgb(13, 37, 82);
+    border: 8px solid rgb(255, 41, 69);
+  }
+
+  #cabecalho h4 {
+    font-size: 18px;
+    margin-right: 50px;
+  }
+
+  .container {
+    margin: 2% auto;
+    font-size: 14px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .container form button {
+    padding: 8px 16px;
+  }
+
+  #icones_cabecalho a {
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+  }
+
+  #icones_cabecalho {
+    margin-right: 0%;
+  }
 }

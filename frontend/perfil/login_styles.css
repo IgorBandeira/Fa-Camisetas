@@ -1,14 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Nerko+One&family=Roboto+Condensed:ital@1&family=Roboto:ital@1&family=Signika+Negative&family=Uchen&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-image: url(https://images5.alphacoders.com/822/822471.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+  padding: 0;
+}
+
+header {
+  margin-bottom: -100px;
+  margin-top: -60px;
+}
+
+.container {
+  margin: 3% auto;
+}
+
+.col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.col-md-6 p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.col-md-6 a {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Formulário de Login */
+.container form .form-group {
+  width: 100%;
+  margin-left: 0;
+  border: 0;
+  padding: 0;
+  color: rgb(255, 41, 69);
+  font-weight: bold;
+}
+
+.container form button {
+  width: 100%;
+  margin-left: 0;
+  background-color: rgb(255, 41, 69);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.container form button:hover {
+  opacity: 0.8;
+  background-color: rgba(255, 41, 70, 0.897);
+}
+
+/* Cabeçalho */
 #cabecalho {
   display: flex;
-  margin-top: -50px;
-  margin-bottom: -100px;
-  margin-left: -80px;
+  margin-top: 20px;
+  margin-left: 20px;
   align-items: center;
   justify-content: center;
   color: rgb(255, 41, 69);
   background-color: transparent;
-  font-size: 110%;
 }
 
 #cabecalho h1 {
@@ -25,7 +89,7 @@
 
 #icones_cabecalho {
   transform: translate(-50%, -50%);
-  margin-left: 10%;
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,78 +122,13 @@
   transform: scale(1.4) rotate(23deg);
 }
 
-#corpo {
-  margin-left: 10%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url(https://images5.alphacoders.com/822/822471.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-#corpo form {
-  width: 80%;
-}
-#corpo #inputs_form {
-  margin-left: 20%;
-  margin-block-end: 4%;
-}
-
-.container {
-  margin: 5%;
-}
-
-.col-md-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.container form .form-group {
-  width: 100%;
-  margin-left: 30%;
-  border: 0;
-  padding: 0;
-  color: rgb(255, 41, 69);
-  font-weight: bolder;
-}
-
-.container form button {
-  width: 100%;
-  margin-left: 30%;
-  background-color: rgb(255, 41, 69);
-  border: none;
-}
-
-.container form button:hover {
-  opacity: 0.8;
-  background-color: rgba(255, 41, 70, 0.897);
-}
-
-.col-md-6 p {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-weight: bolder;
-  color: white;
-}
-
-.col-md-6 a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  font-weight: bolder;
-  color: white;
-}
-
+/* Modal de Esqueci Minha Senha */
 .popup {
   position: fixed;
   top: 0;
@@ -148,8 +147,7 @@
 
 .popup div {
   display: flex;
-  align-items: center; /*alinha no centro na vertical*/
-  justify-content: center; /*alinha no centro na horizontal*/
+  align-items: center;
 }
 
 .popup #btfechar {
@@ -169,4 +167,50 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 900px) {
+  header {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body,
+  header {
+    margin: 0;
+  }
+
+  #cabecalho h1 {
+    font-size: 30px;
+    margin-right: 50px;
+  }
+
+  #cabecalho h4 {
+    font-size: 18px;
+    margin-right: 50px;
+  }
+
+  .container {
+    margin: 2% auto;
+    font-size: 14px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .container form button {
+    padding: 8px 16px;
+  }
+
+  #icones_cabecalho a {
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+  }
+
+  #icones_cabecalho {
+    margin-right: 0%;
+  }
 }

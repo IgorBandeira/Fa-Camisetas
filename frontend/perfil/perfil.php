@@ -55,7 +55,7 @@ if (isset($_SESSION['id']) == false) {
 		<!--icones perfil e carrinho-->
 		<div id="icones_cabecalho">
 			<a href="../../index.php" id="login"><i class="fas fa-user"></i></a>
-			<a href="../Cesta/cesta.php" id="carrinho"><i class="fas fa-shopping-basket"></i></a>
+			<a href="../cesta/cesta.php" id="carrinho"><i class="fas fa-shopping-basket"></i></a>
 		</div>
 
 	</div>
@@ -80,7 +80,7 @@ if (isset($_SESSION['id']) == false) {
 							<li><a href="../pag_feminino/pag_feminino.php">Feminino</a></li>
 						</ul>
 					</li>
-					<li><a href="../Cesta/cesta.php">Carrinho</a></li>
+					<li><a href="../cesta/cesta.php">Carrinho</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="../cadastro/cadastro.php"><i class="fas fa-user"></i> Cadastro</a></li>

@@ -1,5 +1,5 @@
 -- script bd
-drop database loja;
+#drop database loja;
 -- criar base de dados
 CREATE DATABASE loja;
 -- selecionar bd

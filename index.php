@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_POST['entrar'])) :
-  $con  = new mysqli("localhost", "root", "", "loja");
+  $con = new mysqli("localhost", "root", "", "loja");
   $erros = array();
   $email  = $_POST["email"];
   $senha  = ($_POST["senha"]);
@@ -25,7 +25,7 @@ endif;
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale-1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="icon" type="image/png" sizes="16x16" href="./frontend/imagens_site/imagens/favicon-32x32.png">
 
   <!-- Bootstrap -->
@@ -63,7 +63,7 @@ endif;
     <!--icones perfil e carrinho-->
     <div id="icones_cabecalho">
       <a href="./frontend/vitrine/vitrine.php" id="login" name="b1"><i class="fas fa-store-alt"></i></a>
-      <a href="./frontend/Cesta/cesta.php" id="carrinho"><i class="fas fa-shopping-basket"></i></a>
+      <a href="./frontend/cesta/cesta.php" id="carrinho"><i class="fas fa-shopping-basket"></i></a>
     </div>
   </div>
 </header>
@@ -77,7 +77,7 @@ endif;
     <div class="row">
       <div class="col-md-6">
         <p>
-          Já tem cadastro, faça seu login! 🌟
+          Já tem cadastro? Faça seu login! 🌟
         </p>
         <div class="container">
           <?php

@@ -53,7 +53,7 @@ $resultado = mysqli_query($con, $sql);
 		<!--icones perfil e carrinho-->
 		<div id="icones_cabecalho">
 			<a href="iconePerfil.php" id="login"><i class="fas fa-user"></i></a>
-			<a href="../Cesta/cesta.php" id="carrinho"><i class="fas fa-shopping-basket"></i></a>
+			<a href="../cesta/cesta.php" id="carrinho"><i class="fas fa-shopping-basket"></i></a>
 		</div>
 
 	</div>
@@ -78,7 +78,7 @@ $resultado = mysqli_query($con, $sql);
 							<li><a href="../pag_feminino/pag_feminino.php">Feminino</a></li>
 						</ul>
 					</li>
-					<li><a href="../Cesta/cesta.php">Carrinho</a></li>
+					<li><a href="../cesta/cesta.php">Carrinho</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="../cadastro/cadastro.php"><i class="fas fa-user"></i> Cadastro</a></li>
@@ -103,7 +103,7 @@ $resultado = mysqli_query($con, $sql);
 							<a name="detalhes" href="../detalhe/detalhe.php?id_produto=<?php echo $req['pk_id_produto']; ?>">
 								<h3 name="titulo" id="title"><?php echo $req['nome_roupa']; ?></>
 									<h4 name="preco" id="preco">R$ <?php echo $req['vl_produto']; ?></h4>
-									<p><a href="../Cesta/cesta.php?add=cesta&id=<?php echo $req['pk_id_produto']; ?>" class="btn btn-primary" role="button" onclick="botaoComprar()" id="btnComprar"> Comprar </a> </p>
+									<p><a href="../cesta/cesta.php?add=cesta&id=<?php echo $req['pk_id_produto']; ?>" class="btn btn-primary" role="button" onclick="botaoComprar()" id="btnComprar"> Comprar </a> </p>
 						</div>
 					</div>
 				</div>

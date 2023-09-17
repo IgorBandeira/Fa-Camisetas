@@ -52,7 +52,7 @@
 		<!--icones perfil e carrinho-->
 		<div id="icones_cabecalho">
 			<a href="../vitrine/iconePerfil.php" id="login"><i class="fas fa-user"></i></a>
-			<a href="../Cesta/cesta.php" id="carrinho"><i class="fas fa-shopping-basket"></i></a>
+			<a href="../cesta/cesta.php" id="carrinho"><i class="fas fa-shopping-basket"></i></a>
 		</div>
 
 	</div>
@@ -77,7 +77,7 @@
 							<li><a href="../pag_feminino/pag_feminino.php">Feminino</a></li>
 						</ul>
 					</li>
-					<li><a href="../Cesta/cesta.php">Carrinho</a></li>
+					<li><a href="../cesta/cesta.php">Carrinho</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="../cadastro/cadastro.php"><i class="fas fa-user"></i> Cadastro</a></li>
@@ -265,7 +265,7 @@ function inserir()
 	$senha	  	= $_POST["senha"];
 	$cpf	  	= $_POST["cpf"];
 	$telefone 	= $_POST["telefone"];
-	$con	 	= new mysqli("localhost", "root", "", "loja");
+	$con = new mysqli("localhost", "root", "", "loja");
 	$sql	  	= "select * from tb_cliente where email='$email'";
 	$resultado	= mysqli_query($con, $sql);
 	if ($reg = mysqli_fetch_array($resultado)) {
